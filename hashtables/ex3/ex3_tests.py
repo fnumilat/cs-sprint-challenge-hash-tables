@@ -50,6 +50,7 @@ class TestEx2(unittest.TestCase):
         result = intersection(arrays)
         result.sort()
         self.assertTrue(result == [1,2,3])
+        print(result)
 
 if __name__ == '__main__':
     unittest.main()

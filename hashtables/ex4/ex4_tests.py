@@ -15,6 +15,7 @@ class TestEx4(unittest.TestCase):
         result = has_negatives([-1,-2,1,2,3,4,-4])
         result.sort()
         self.assertTrue(result == [1,2,4])
+        print(f"has positives: {result}")
 
     def test_large(self):
         a = list(range(5000000))
@@ -23,6 +24,7 @@ class TestEx4(unittest.TestCase):
         result = has_negatives(a)
         result.sort()
         self.assertTrue(result == [1,2,3])
+        print(f"has negatives: {result}")
 
 if __name__ == '__main__':
     unittest.main()
